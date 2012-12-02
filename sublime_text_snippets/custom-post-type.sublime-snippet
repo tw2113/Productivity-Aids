@@ -1,0 +1,50 @@
+<snippet>
+	<content><![CDATA[
+
+add_action( 'init', 'register_cpt_${1:test}' );
+
+function register_cpt_${1:test}() {
+
+    \$labels = array(
+		'name'               => '${2:Tests}',
+		'singular_name'      => '${3:Test}',
+		'add_new'            => 'Add New ${3:Test}',
+		'add_new_item'       => 'Add New ${3:Test}',
+		'edit_item'          => 'Edit ${3:Test}',
+		'new_item'           => 'New ${3:Test}',
+		'view_item'          => 'View ${3:Test}',
+		'search_items'       => 'Search ${2:Tests}',
+		'not_found'          => 'No ${2:Tests} found',
+		'not_found_in_trash' => 'No ${2:Tests} found in Trash',
+		'parent_item_colon'  => 'Parent ${3:Test}:',
+		'menu_name'          => '${2:Tests}',
+    );
+
+    \$args = array(
+		'labels'              => \$labels,
+		'hierarchical'        => true,
+		'description'         => 'description',
+		'taxonomies'          => array( 'category' ),
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'menu_position'       => 5,
+		//'menu_icon'         => '',
+		'show_in_nav_menus'   => true,
+		'publicly_queryable'  => true,
+		'exclude_from_search' => false,
+		'has_archive'         => true,
+		'query_var'           => true,
+		'can_export'          => true,
+		'rewrite'             => true,
+		'capability_type'     => 'post',
+		'supports'            => array( 'title', 'editor', 'author', 'thumbnail', 'custom-fields', 'trackbacks', 'comments', 'revisions', 'page-attributes', 'post-formats' ),
+    );
+
+    register_post_type( '${1:test}', \$args );
+}]]></content>
+	<tabTrigger>cpt</tabTrigger>
+    <description>Register Custom Post Type Wordpress</description>
+</snippet>
+
+

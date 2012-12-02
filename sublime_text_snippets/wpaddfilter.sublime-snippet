@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+	add_filter('${1:filter name}', '${2}');
+	function ${2}() {
+		${3}
+	}
+]]></content>
+<description>Hook filter and add function to it</description>
+<tabTrigger>addfilter</tabTrigger>
+</snippet>

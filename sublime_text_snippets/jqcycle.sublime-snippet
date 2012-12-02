@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+<script>
+jQuery(document).ready(function($) {
+	\$('${1://selector}').cycle({
+		fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+		speed: ${2},
+    	timeout: ${3}
+	});
+});
+</script>
+]]></content>
+	<tabTrigger>jqcycle</tabTrigger>
+    <description>jQuery Cycle Plugin</description>
+</snippet>
+
+

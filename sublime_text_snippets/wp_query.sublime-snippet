@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+<?php
+\$args = array(
+	'${2:param}' => '${3:desiredvalue}'$0
+);
+\$${1:myvar} = new WP_Query(\$args);
+
+if(\$${1:myvar}->have_posts()) : while(\$${1:myvar}->have_posts()): \$${1:myvar}->the_post(); ?>
+
+<?php endwhile;
+wp_reset_postdata();
+endif; ?>
+]]></content>
+<description>Create new WP_Query()</description>
+<tabTrigger>wpquery</tabTrigger>
+</snippet>

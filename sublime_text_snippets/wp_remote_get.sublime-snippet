@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+<?php
+	\$${1:var} = json_decode(wp_remote_retrieve_body(wp_remote_get('${2:url}')));
+	var_dump(\$${1:var});
+?>
+]]></content>
+	<tabTrigger>wpremoteget</tabTrigger>
+    <description>WP Remote Get</description>
+</snippet>

@@ -1,0 +1,32 @@
+<snippet>
+	<content>
+	<![CDATA[
+<?php
+class ${1:class_name} {
+
+	public function __construct() {
+		${3://Add hooks here}
+	}
+
+	public function rename_me() {
+
+	}
+
+	public function rename_me() {
+
+	}
+
+	public function getTransient( \$transient ) {
+		if ( false === ( \$variable = get_transient( \$transient ) ) ) {
+			$variable = json_decode( wp_remote_retrieve_body( wp_remote_get( 'FILL ME IN' ) ) );
+			set_transient( \$transient, \$variable, 60*60 );
+		}
+		return \$variable
+	}
+}
+// Have a nice day!
+\$${2:Variable} = new ${1:class_name};
+]]></content>
+	<tabTrigger>oop</tabTrigger>
+    <description>OOP Class starting point</description>
+</snippet>

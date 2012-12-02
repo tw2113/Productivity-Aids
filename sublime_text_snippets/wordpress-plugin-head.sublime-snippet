@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+<?php
+/*
+Plugin Name: ${1:Plugin Name}
+Plugin URI: ${2:Plugin URI}
+Description: ${3:Description of the plugin}
+Version: ${4:Version number}
+Author: ${5:Author Name}
+Author URI: ${6:Author URI}
+License: ${7:Code License}
+*/
+]]></content>
+	<tabTrigger>plugin_head</tabTrigger>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+	add_action('${1:hook name}', '${2:function name}');
+	function ${2:function name}() {
+		${3}
+	}
+]]></content>
+<description>Hook action and add function to it</description>
+<tabTrigger>addaction</tabTrigger>
+</snippet>
